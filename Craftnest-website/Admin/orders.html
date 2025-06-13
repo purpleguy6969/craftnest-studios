@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management - CraftNest Studios</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <h2>CraftNest Admin</h2>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="active"><a href="orders.html"><i class="fas fa-shopping-bag"></i> Orders</a></li>
+                    <li><a href="chat.html"><i class="fas fa-comments"></i> Customer Chat</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <h3>Order Management</h3>
+                <div class="admin-search">
+                    <input type="text" placeholder="Search orders...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </header>
+
+            <div class="order-filters">
+                <button class="filter-btn active">All Orders</button>
+                <button class="filter-btn">Pending</button>
+                <button class="filter-btn">Processing</button>
+                <button class="filter-btn">Completed</button>
+                <button class="filter-btn">Cancelled</button>
+            </div>
+
+            <div class="orders-grid">
+                <!-- Order 1 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">#CN1001</span>
+                        <span class="order-date">12 Oct 2023</span>
+                    </div>
+                    <div class="order-status status-pending">Pending</div>
+                    <div class="order-customer">
+                        <h4>Rahul Sharma</h4>
+                        <p>rahul.sharma@example.com</p>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span>Holiday Homework</span>
+                            <span>₹450</span>
+                        </div>
+                        <div class="order-item">
+                            <span>Personalized Notebook</span>
+                            <span>₹199</span>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        Total: ₹649
+                    </div>
+                    <div class="order-actions">
+                        <button class="btn-sm"><i class="fas fa-eye"></i> View</button>
+                        <button class="btn-sm"><i class="fas fa-edit"></i> Update</button>
+                    </div>
+                </div>
+
+                <!-- Order 2 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">#CN1002</span>
+                        <span class="order-date">11 Oct 2023</span>
+                    </div>
+                    <div class="order-status status-processing">Processing</div>
+                    <div class="order-customer">
+                        <h4>Priya Patel</h4>
+                        <p>priya.patel@example.com</p>
+                        <p>+91 8765432109</p>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span>Digital Resume</span>
+                            <span>₹299</span>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        Total: ₹299
+                    </div>
+                    <div class="order-actions">
+                        <button class="btn-sm"><i class="fas fa-eye"></i> View</button>
+                        <button class="btn-sm"><i class="fas fa-edit"></i> Update</button>
+                    </div>
+                </div>
+
+                <!-- Order 3 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">#CN1003</span>
+                        <span class="order-date">10 Oct 2023</span>
+                    </div>
+                    <div class="order-status status-completed">Completed</div>
+                    <div class="order-customer">
+                        <h4>Ankit Gupta</h4>
+                        <p>ankit.gupta@example.com</p>
+                        <p>+91 7654321098</p>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span>Gift Box (Medium)</span>
+                            <span>₹350</span>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        Total: ₹350
+                    </div>
+                    <div class="order-actions">
+                        <button class="btn-sm"><i class="fas fa-eye"></i> View</button>
+                        <button class="btn-sm"><i class="fas fa-print"></i> Invoice</button>
+                    </div>
+                </div>
+
+                <!-- Order 4 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">#CN1004</span>
+                        <span class="order-date">09 Oct 2023</span>
+                    </div>
+                    <div class="order-status status-completed">Completed</div>
+                    <div class="order-customer">
+                        <h4>Neha Singh</h4>
+                        <p>neha.singh@example.com</p>
+                        <p>+91 6543210987</p>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span>Science Project</span>
+                            <span>₹500</span>
+                        </div>
+                        <div class="order-item">
+                            <span>Bookmarks (Set of 5)</span>
+                            <span>₹150</span>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        Total: ₹650
+                    </div>
+                    <div class="order-actions">
+                        <button class="btn-sm"><i class="fas fa-eye"></i> View</button>
+                        <button class="btn-sm"><i class="fas fa-print"></i> Invoice</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>

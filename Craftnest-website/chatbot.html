@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - CraftNest Studios</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CraftNest Studios</h1>
+                <p>Where Creativity Meets Convenience</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="pages/holiday-homework.html">Holiday Homework</a>
+                            <a href="pages/notebook-customizer.html">Notebook Customizer</a>
+                            <a href="pages/digital-design.html">Digital Design</a>
+                            <a href="pages/gift-boxes.html">Gift Boxes</a>
+                        </div>
+                    </li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li><a href="chatbot.html" class="active"><i class="fas fa-robot"></i> AI Assistant</a></li>
+                    <li><a href="auth/login.html" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="chatbot-section">
+        <div class="container">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <h2><i class="fas fa-robot"></i> CraftNest AI Assistant</h2>
+                    <p>How can I help you today?</p>
+                </div>
+                <div class="chatbot-messages" id="chatMessages">
+                    <div class="message bot">
+                        <div class="avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="content">
+                            <p>Hello! I'm your CraftNest AI assistant. I can help you with information about our services, order status, and more. What would you like to know?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+                    <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>CraftNest Studios</h3>
+                    <p>Bringing creativity to your doorstep with personalized solutions for all your needs.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/holiday-homework.html">Services</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="auth/login.html">Login</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 9625494983</p>
+                    <p><i class="fab fa-whatsapp"></i> 9315667722</p>
+                    <p><i class="fas fa-envelope"></i> sangwanpriyanshu98@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CraftNest Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/chatbot.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

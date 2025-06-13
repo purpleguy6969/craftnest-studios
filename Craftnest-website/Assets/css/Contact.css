@@ -1,0 +1,155 @@
+/* Contact Page Styles */
+.contact-hero {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(106, 90, 205, 0.8), rgba(106, 90, 205, 0.8)), url('../../assets/images/banners/contact-bg.jpg') no-repeat center center/cover;
+    margin-top: 70px;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    color: #6a5acd;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-item i {
+    font-size: 1.2rem;
+    color: #6a5acd;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+.info-item p {
+    color: #6c757d;
+}
+
+.social-links h3 {
+    color: #6a5acd;
+    margin: 30px 0 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6a5acd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #5a4acd;
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+    color: #6a5acd;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6a5acd;
+    box-shadow: 0 0 0 3px rgba(106, 90, 205, 0.1);
+    outline: none;
+}
+
+.map-section {
+    padding: 0 0 60px;
+}
+
+.map-section h2 {
+    color: #6a5acd;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+}
